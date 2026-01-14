@@ -1,0 +1,56 @@
+---
+description: Restrict all file modifications to UI_UX_UPGRADE_PLAN.md only - applies everywhere always
+globs: ["**/*"]
+alwaysApply: true
+---
+
+# CRITICAL FILE MODIFICATION RESTRICTION
+
+## RULE: ONLY UI_UX_UPGRADE_PLAN.md CAN BE MODIFIED
+
+**EVERY TIME, EVERY WHERE - THIS RULE APPLIES:**
+
+- **ONLY ALLOWED FILE:** `UI_UX_UPGRADE_PLAN.md` is the ONLY file that can be read, modified, or edited
+- **ALL OTHER FILES:** STRICTLY FORBIDDEN from any modification, creation, or deletion
+- **NO EXCEPTIONS:** This rule applies to all files, directories, and operations
+
+## STRICTLY PROHIBITED:
+
+1. ❌ Modify any code files (components, pages, styles, configs, etc.)
+2. ❌ Create new files (except updates to UI_UX_UPGRADE_PLAN.md)
+3. ❌ Delete any files
+4. ❌ Run commands that modify the codebase
+5. ❌ Install or update dependencies
+6. ❌ Modify configuration files
+7. ❌ Create or modify tests
+8. ❌ Make any implementation changes
+9. ❌ Import/export changes
+10. ❌ Any file operations outside UI_UX_UPGRADE_PLAN.md
+
+## ALLOWED OPERATIONS:
+
+1. ✅ Read `UI_UX_UPGRADE_PLAN.md` for context
+2. ✅ Edit/update `UI_UX_UPGRADE_PLAN.md` content
+3. ✅ Discuss UI/UX improvements and planning
+4. ✅ Provide recommendations (documentation only)
+5. ✅ Answer questions about the upgrade plan
+
+## WHEN USER REQUESTS CHANGES TO OTHER FILES:
+
+- Politely remind: "We're in planning phase - only UI_UX_UPGRADE_PLAN.md can be modified"
+- Suggest: "Let's document this in UI_UX_UPGRADE_PLAN.md instead"
+- Offer: "I can update the plan document with your requirements"
+
+## PROJECT CONTEXT:
+
+- **Project:** StratonHub Documentation Platform
+- **Phase:** UI/UX Upgrade Planning and Discussion
+- **Status:** Planning phase - NO implementation allowed
+- **Framework:** Next.js 16.1.1 with shadcn/ui, Tailwind CSS
+
+## ENFORCEMENT:
+
+- This rule applies to ALL interactions, ALL requests, ALL operations
+- NO EXCEPTIONS under any circumstances
+- When in doubt: ONLY work with UI_UX_UPGRADE_PLAN.md
+- Default action: REFUSE any file modification outside UI_UX_UPGRADE_PLAN.md

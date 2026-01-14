@@ -1,0 +1,207 @@
+{
+  // ============================================================================
+  // Git Configuration
+  // ============================================================================
+  "git.path": "C:\\Program Files\\Git\\cmd\\git.exe",
+  "git.enabled": true,
+  "git.autofetch": false,
+  "git.confirmSync": false,
+  "git.enableSmartCommit": true,
+  "git.suggestSmartCommit": false,
+
+  // ============================================================================
+  // GitLens Configuration (Quiet Mode)
+  // ============================================================================
+  "gitlens.git.path": "C:\\Program Files\\Git\\cmd\\git.exe",
+  "gitlens.statusBar.enabled": false,
+  "gitlens.codeLens.enabled": false,
+  "gitlens.currentLine.enabled": false,
+  "gitlens.hovers.enabled": false,
+  "gitlens.currentLine.format": "",
+  "gitlens.statusBar.pullRequests.enabled": false,
+  "gitlens.plusFeatures.enabled": false,
+  "gitlens.showWelcomeOnInstall": false,
+  "gitlens.showWhatsNewAfterUpgrades": false,
+  "gitlens.notifications.enabled": false,
+  "gitlens.mode.statusBar.enabled": false,
+
+  // ============================================================================
+  // TypeScript Configuration (Reduce Noise)
+  // ============================================================================
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "typescript.suggest.autoImports": true,
+  "typescript.preferences.importModuleSpecifier": "relative",
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "typescript.preferences.includePackageJsonAutoImports": "off",
+  "typescript.inlayHints.parameterNames.enabled": "none",
+  "typescript.inlayHints.variableTypes.enabled": false,
+  "typescript.inlayHints.propertyDeclarationTypes.enabled": false,
+  "typescript.inlayHints.functionLikeReturnTypes.enabled": false,
+  "typescript.inlayHints.enumMemberValues.enabled": false,
+
+  // ============================================================================
+  // ESLint Configuration (Quiet Mode)
+  // ============================================================================
+  "eslint.enable": true,
+  "eslint.quiet": true,
+  "eslint.run": "onType",
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact"
+  ],
+  "eslint.lintTask.enable": true,
+  "eslint.codeActionsOnSave.mode": "problems",
+  "eslint.notifications.enable": false,
+  "eslint.output": "quiet",
+
+  // ============================================================================
+  // Editor Configuration (Clean Interface)
+  // ============================================================================
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": false,
+  "editor.formatOnType": false,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit",
+    "source.organizeImports": "explicit"
+  },
+  "editor.bracketPairColorization.enabled": true,
+  "editor.guides.bracketPairs": "active",
+  "editor.minimap.enabled": false,
+  "editor.renderWhitespace": "none",
+  "editor.renderControlCharacters": false,
+  "editor.renderIndentGuides": false,
+  "editor.showFoldingControls": "mouseover",
+  "editor.suggest.showKeywords": false,
+  "editor.suggest.showSnippets": false,
+  "editor.suggest.showWords": false,
+  "editor.wordWrap": "on",
+  "editor.inlineSuggest.enabled": true,
+  "editor.quickSuggestions": {
+    "other": "on",
+    "comments": "off",
+    "strings": "off"
+  },
+  "editor.suggestSelection": "first",
+  "editor.tabSize": 2,
+  "editor.insertSpaces": true,
+
+  // ============================================================================
+  // File Watcher Configuration (Reduce Noise)
+  // ============================================================================
+  "files.watcherExclude": {
+    "**/.git/objects/**": true,
+    "**/.git/subtree-cache/**": true,
+    "**/node_modules/**": true,
+    "**/.next/**": true,
+    "**/dist/**": true,
+    "**/build/**": true,
+    "**/coverage/**": true,
+    "**/.turbo/**": true,
+    "**/.pnpm-store/**": true
+  },
+  "files.exclude": {
+    "**/.git": false,
+    "**/.DS_Store": true,
+    "**/Thumbs.db": true
+  },
+  "files.autoSave": "afterDelay",
+  "files.autoSaveDelay": 1000,
+  "files.trimTrailingWhitespace": true,
+  "files.insertFinalNewline": true,
+  "files.trimFinalNewlines": true,
+
+  // ============================================================================
+  // Notification Configuration (Silent Mode)
+  // ============================================================================
+  "notification.showErrorsInStatusBar": "off",
+  "notification.duration": 2000,
+  "notifications.showErrorsInStatusBar": false,
+
+  // ============================================================================
+  // Status Bar Configuration (Clean UI)
+  // ============================================================================
+  "statusBar.showFeedback": false,
+  "workbench.statusBar.visible": true,
+  "workbench.statusBar.feedback.visible": false,
+
+  // ============================================================================
+  // Problems Panel Configuration
+  // ============================================================================
+  "problems.showCurrentInStatus": false,
+  "problems.decorations.enabled": true,
+  "problems.sortOrder": "severity",
+
+  // ============================================================================
+  // Terminal Configuration (Quiet Output)
+  // ============================================================================
+  "terminal.integrated.enableBell": false,
+  "terminal.integrated.showExitAlert": false,
+  "terminal.integrated.defaultProfile.windows": "PowerShell",
+  "terminal.integrated.cursorBlinking": false,
+  "terminal.integrated.cursorStyle": "line",
+  "terminal.integrated.fontSize": 13,
+
+  // ============================================================================
+  // Search Configuration (Exclude Noisy Directories)
+  // ============================================================================
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/.next": true,
+    "**/dist": true,
+    "**/build": true,
+    "**/coverage": true,
+    "**/.turbo": true,
+    "**/.pnpm-store": true,
+    "**/package-lock.json": true,
+    "**/pnpm-lock.yaml": false,
+    "**/yarn.lock": true
+  },
+  "search.useIgnoreFiles": true,
+  "search.useGlobalIgnoreFiles": true,
+  "search.followSymlinks": false,
+  "search.smartCase": true,
+
+  // ============================================================================
+  // Extensions Configuration
+  // ============================================================================
+  "extensions.autoCheckUpdates": false,
+  "extensions.autoUpdate": false,
+  "extensions.ignoreRecommendations": false,
+  "extensions.showRecommendationsOnlyOnDemand": true,
+
+  // ============================================================================
+  // Next.js / React Specific
+  // ============================================================================
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "javascript.preferences.importModuleSpecifier": "relative",
+  "javascript.preferences.includePackageJsonAutoImports": "off",
+  "javascript.inlayHints.parameterNames.enabled": "none",
+  "javascript.inlayHints.variableTypes.enabled": false,
+  "javascript.inlayHints.propertyDeclarationTypes.enabled": false,
+  "javascript.inlayHints.functionLikeReturnTypes.enabled": false,
+  "javascript.inlayHints.enumMemberValues.enabled": false,
+
+  // ============================================================================
+  // Prettier Configuration
+  // ============================================================================
+  "prettier.enable": true,
+  "prettier.requireConfig": true,
+  "prettier.useEditorConfig": false,
+
+  // ============================================================================
+  // Output Configuration (Reduce Noise)
+  // ============================================================================
+  "output.smartScroll.enabled": true,
+
+  // ============================================================================
+  // Workspace Trust (Reduce Prompts)
+  // ============================================================================
+  "security.workspace.trust.untrustedFiles": "open",
+
+  // ============================================================================
+  // Telemetry (Privacy)
+  // ============================================================================
+  "telemetry.telemetryLevel": "off"
+}

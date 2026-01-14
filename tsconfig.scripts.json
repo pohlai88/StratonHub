@@ -1,17 +1,22 @@
 {
   "compilerOptions": {
-    "module": "esnext",
-    "target": "esnext",
+    "module": "ESNext",
+    "target": "ESNext",
     "moduleResolution": "node",
     "outDir": "dist/scripts",
     "strict": true,
     "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
     "skipLibCheck": true,
     "jsx": "react-jsx",
     "baseUrl": ".",
     "paths": {
       "@/*": ["./*"]
     }
+  },
+  "ts-node": {
+    "esm": true,
+    "experimentalSpecifierResolution": "node"
   },
   "include": ["scripts/**/*.ts"],
   "exclude": ["node_modules"]

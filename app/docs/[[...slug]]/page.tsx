@@ -8,6 +8,7 @@ import { Typography } from "@/components/ui/typography"
 import { ArticleBreadcrumb } from "@/components/article/breadcrumb"
 import { Pagination } from "@/components/article/pagination"
 import { TableOfContents } from "@/components/toc"
+import { AuthProtected } from "@/components/auth-protected"
 
 interface PageProps {
   params: Promise<{ slug: string[] }>
@@ -23,25 +24,27 @@ export default async function Pages({ params }: PageProps) {
   const { frontmatter, content, tocs } = res
 
   return (
-    <div className="flex items-start gap-10">
-      <section className="flex-3">
-        <ArticleBreadcrumb paths={slug} />
-        <div className="space-y-4">
-          <h1 className="text-3xl font-semibold">{frontmatter.title}</h1>
-          <p className="text-sm">{frontmatter.description}</p>
-          <Separator />
-        </div>
-        <Typography>
-          <section>{content}</section>
-          <Pagination pathname={pathName} />
-        </Typography>
-      </section>
-      <TableOfContents
-        tocs={{ tocs }}
-        pathName={pathName}
-        frontmatter={frontmatter}
-      />
-    </div>
+    <AuthProtected>
+      <div className="flex items-start gap-10">
+        <section className="flex-3">
+          <ArticleBreadcrumb paths={slug} />
+          <div className="space-y-4">
+            <h1 className="text-3xl font-semibold">{frontmatter.title}</h1>
+            <p className="text-sm">{frontmatter.description}</p>
+            <Separator />
+          </div>
+          <Typography>
+            <section>{content}</section>
+            <Pagination pathname={pathName} />
+          </Typography>
+        </section>
+        <TableOfContents
+          tocs={{ tocs }}
+          pathName={pathName}
+          frontmatter={frontmatter}
+        />
+      </div>
+    </AuthProtected>
   )
 }
 
